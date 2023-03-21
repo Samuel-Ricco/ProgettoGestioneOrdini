@@ -28,77 +28,111 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.lbl_inputDiscount = new System.Windows.Forms.Label();
+            this.tbx_inputQuantity = new System.Windows.Forms.TextBox();
+            this.lbl_inputQuantity = new System.Windows.Forms.Label();
+            this.lbl_inputProduct = new System.Windows.Forms.Label();
+            this.cbx_inputDiscount = new System.Windows.Forms.ComboBox();
+            this.cbx_inputProduct = new System.Windows.Forms.ComboBox();
+            this.performanceCounter1 = new System.Diagnostics.PerformanceCounter();
+            this.lbl_titleInsertOrderItemData = new System.Windows.Forms.Label();
+            this.btn_insertOrderItem = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label10
+            // lbl_inputDiscount
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(583, 84);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 47;
-            this.label10.Text = "label10";
+            this.lbl_inputDiscount.AutoSize = true;
+            this.lbl_inputDiscount.Location = new System.Drawing.Point(728, 124);
+            this.lbl_inputDiscount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputDiscount.Name = "lbl_inputDiscount";
+            this.lbl_inputDiscount.Size = new System.Drawing.Size(72, 20);
+            this.lbl_inputDiscount.TabIndex = 47;
+            this.lbl_inputDiscount.Text = "Discount";
             // 
-            // textBox1
+            // tbx_inputQuantity
             // 
-            this.textBox1.Location = new System.Drawing.Point(474, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 20);
-            this.textBox1.TabIndex = 46;
+            this.tbx_inputQuantity.Location = new System.Drawing.Point(438, 166);
+            this.tbx_inputQuantity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbx_inputQuantity.Name = "tbx_inputQuantity";
+            this.tbx_inputQuantity.Size = new System.Drawing.Size(207, 26);
+            this.tbx_inputQuantity.TabIndex = 46;
             // 
-            // label1
+            // lbl_inputQuantity
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(307, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
-            this.label1.TabIndex = 45;
-            this.label1.Text = "non mi ricordo";
+            this.lbl_inputQuantity.AutoSize = true;
+            this.lbl_inputQuantity.Location = new System.Drawing.Point(507, 124);
+            this.lbl_inputQuantity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputQuantity.Name = "lbl_inputQuantity";
+            this.lbl_inputQuantity.Size = new System.Drawing.Size(68, 20);
+            this.lbl_inputQuantity.TabIndex = 45;
+            this.lbl_inputQuantity.Text = "Quantity";
             // 
-            // label9
+            // lbl_inputProduct
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(96, 84);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 13);
-            this.label9.TabIndex = 44;
-            this.label9.Text = "Product";
+            this.lbl_inputProduct.AutoSize = true;
+            this.lbl_inputProduct.Location = new System.Drawing.Point(226, 124);
+            this.lbl_inputProduct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputProduct.Name = "lbl_inputProduct";
+            this.lbl_inputProduct.Size = new System.Drawing.Size(64, 20);
+            this.lbl_inputProduct.TabIndex = 44;
+            this.lbl_inputProduct.Text = "Product";
             // 
-            // comboBox5
+            // cbx_inputDiscount
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(243, 110);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(200, 21);
-            this.comboBox5.TabIndex = 43;
+            this.cbx_inputDiscount.FormattingEnabled = true;
+            this.cbx_inputDiscount.Location = new System.Drawing.Point(674, 164);
+            this.cbx_inputDiscount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbx_inputDiscount.Name = "cbx_inputDiscount";
+            this.cbx_inputDiscount.Size = new System.Drawing.Size(180, 28);
+            this.cbx_inputDiscount.TabIndex = 43;
             // 
-            // comboBox6
+            // cbx_inputProduct
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(25, 110);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(200, 21);
-            this.comboBox6.TabIndex = 42;
+            this.cbx_inputProduct.FormattingEnabled = true;
+            this.cbx_inputProduct.Location = new System.Drawing.Point(109, 164);
+            this.cbx_inputProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbx_inputProduct.Name = "cbx_inputProduct";
+            this.cbx_inputProduct.Size = new System.Drawing.Size(298, 28);
+            this.cbx_inputProduct.TabIndex = 42;
+            // 
+            // lbl_titleInsertOrderItemData
+            // 
+            this.lbl_titleInsertOrderItemData.AutoSize = true;
+            this.lbl_titleInsertOrderItemData.Location = new System.Drawing.Point(571, 43);
+            this.lbl_titleInsertOrderItemData.Name = "lbl_titleInsertOrderItemData";
+            this.lbl_titleInsertOrderItemData.Size = new System.Drawing.Size(169, 20);
+            this.lbl_titleInsertOrderItemData.TabIndex = 48;
+            this.lbl_titleInsertOrderItemData.Text = "Insert Order Item Data";
+            // 
+            // btn_insertOrderItem
+            // 
+            this.btn_insertOrderItem.Location = new System.Drawing.Point(951, 140);
+            this.btn_insertOrderItem.Name = "btn_insertOrderItem";
+            this.btn_insertOrderItem.Size = new System.Drawing.Size(144, 85);
+            this.btn_insertOrderItem.TabIndex = 49;
+            this.btn_insertOrderItem.Text = "Insert Order Item";
+            this.btn_insertOrderItem.UseVisualStyleBackColor = true;
+            this.btn_insertOrderItem.Click += new System.EventHandler(this.btn_insertOrderItem_Click);
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 336);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox6);
+            this.ClientSize = new System.Drawing.Size(1200, 286);
+            this.Controls.Add(this.btn_insertOrderItem);
+            this.Controls.Add(this.lbl_titleInsertOrderItemData);
+            this.Controls.Add(this.lbl_inputDiscount);
+            this.Controls.Add(this.tbx_inputQuantity);
+            this.Controls.Add(this.lbl_inputQuantity);
+            this.Controls.Add(this.lbl_inputProduct);
+            this.Controls.Add(this.cbx_inputDiscount);
+            this.Controls.Add(this.cbx_inputProduct);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,11 +140,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label lbl_inputDiscount;
+        private System.Windows.Forms.TextBox tbx_inputQuantity;
+        private System.Windows.Forms.Label lbl_inputQuantity;
+        private System.Windows.Forms.Label lbl_inputProduct;
+        private System.Windows.Forms.ComboBox cbx_inputDiscount;
+        private System.Windows.Forms.ComboBox cbx_inputProduct;
+        private System.Diagnostics.PerformanceCounter performanceCounter1;
+        private System.Windows.Forms.Label lbl_titleInsertOrderItemData;
+        private System.Windows.Forms.Button btn_insertOrderItem;
     }
 }

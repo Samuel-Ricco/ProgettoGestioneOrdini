@@ -21,5 +21,25 @@ namespace ProgettoGruppo2
         {
 
         }
+
+        private void btn_insertOrder_Click(object sender, EventArgs e)
+        {
+            if(!CheckCorrectOrderInput())
+            {
+                
+                
+                Application.Run(new Form3());
+            }
+            else
+            {
+                MessageBox.Show("Dati inseriti non corretti");
+            }
+        }
+
+        private bool CheckCorrectOrderInput()
+        {
+
+            return true;
+        }
     }
 }

@@ -28,168 +28,196 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label8 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lbl_inputShippedDate = new System.Windows.Forms.Label();
+            this.lbl_inputRequiredDate = new System.Windows.Forms.Label();
+            this.lbl_inputOrderDate = new System.Windows.Forms.Label();
+            this.lbl_inputOrderStatus = new System.Windows.Forms.Label();
+            this.lbl_inputStaff = new System.Windows.Forms.Label();
+            this.lbl_inputStore = new System.Windows.Forms.Label();
+            this.lbl_inputCustomer = new System.Windows.Forms.Label();
+            this.btn_insertOrder = new System.Windows.Forms.Button();
+            this.dtp_inputRequiredDate = new System.Windows.Forms.DateTimePicker();
+            this.cbx_inputOrderStatus = new System.Windows.Forms.ComboBox();
+            this.dtp_inputShippedDate = new System.Windows.Forms.DateTimePicker();
+            this.dtp_inputOrderDate = new System.Windows.Forms.DateTimePicker();
+            this.cbx_inputStaff = new System.Windows.Forms.ComboBox();
+            this.cbx_inputStore = new System.Windows.Forms.ComboBox();
+            this.cbx_inputCustomer = new System.Windows.Forms.ComboBox();
+            this.lbl_titleInsertOrderData = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label8
+            // lbl_inputShippedDate
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(544, 87);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 13);
-            this.label8.TabIndex = 35;
-            this.label8.Text = "Shipped Date";
+            this.lbl_inputShippedDate.AutoSize = true;
+            this.lbl_inputShippedDate.Location = new System.Drawing.Point(819, 201);
+            this.lbl_inputShippedDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputShippedDate.Name = "lbl_inputShippedDate";
+            this.lbl_inputShippedDate.Size = new System.Drawing.Size(107, 20);
+            this.lbl_inputShippedDate.TabIndex = 35;
+            this.lbl_inputShippedDate.Text = "Shipped Date";
             // 
-            // label6
+            // lbl_inputRequiredDate
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(323, 87);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 13);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "Required Date";
+            this.lbl_inputRequiredDate.AutoSize = true;
+            this.lbl_inputRequiredDate.Location = new System.Drawing.Point(469, 201);
+            this.lbl_inputRequiredDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputRequiredDate.Name = "lbl_inputRequiredDate";
+            this.lbl_inputRequiredDate.Size = new System.Drawing.Size(113, 20);
+            this.lbl_inputRequiredDate.TabIndex = 34;
+            this.lbl_inputRequiredDate.Text = "Required Date";
             // 
-            // label7
+            // lbl_inputOrderDate
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(90, 87);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 13);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "Order Date";
+            this.lbl_inputOrderDate.AutoSize = true;
+            this.lbl_inputOrderDate.Location = new System.Drawing.Point(138, 201);
+            this.lbl_inputOrderDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputOrderDate.Name = "lbl_inputOrderDate";
+            this.lbl_inputOrderDate.Size = new System.Drawing.Size(88, 20);
+            this.lbl_inputOrderDate.TabIndex = 33;
+            this.lbl_inputOrderDate.Text = "Order Date";
             // 
-            // label4
+            // lbl_inputOrderStatus
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(758, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "Order Status";
+            this.lbl_inputOrderStatus.AutoSize = true;
+            this.lbl_inputOrderStatus.Location = new System.Drawing.Point(1131, 84);
+            this.lbl_inputOrderStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputOrderStatus.Name = "lbl_inputOrderStatus";
+            this.lbl_inputOrderStatus.Size = new System.Drawing.Size(100, 20);
+            this.lbl_inputOrderStatus.TabIndex = 32;
+            this.lbl_inputOrderStatus.Text = "Order Status";
             // 
-            // label5
+            // lbl_inputStaff
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(544, 11);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 13);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Staff";
+            this.lbl_inputStaff.AutoSize = true;
+            this.lbl_inputStaff.Location = new System.Drawing.Point(819, 84);
+            this.lbl_inputStaff.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputStaff.Name = "lbl_inputStaff";
+            this.lbl_inputStaff.Size = new System.Drawing.Size(44, 20);
+            this.lbl_inputStaff.TabIndex = 31;
+            this.lbl_inputStaff.Text = "Staff";
             // 
-            // label3
+            // lbl_inputStore
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(323, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Store";
+            this.lbl_inputStore.AutoSize = true;
+            this.lbl_inputStore.Location = new System.Drawing.Point(487, 84);
+            this.lbl_inputStore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputStore.Name = "lbl_inputStore";
+            this.lbl_inputStore.Size = new System.Drawing.Size(48, 20);
+            this.lbl_inputStore.TabIndex = 30;
+            this.lbl_inputStore.Text = "Store";
             // 
-            // label2
+            // lbl_inputCustomer
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Customer";
+            this.lbl_inputCustomer.AutoSize = true;
+            this.lbl_inputCustomer.Location = new System.Drawing.Point(138, 84);
+            this.lbl_inputCustomer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inputCustomer.Name = "lbl_inputCustomer";
+            this.lbl_inputCustomer.Size = new System.Drawing.Size(78, 20);
+            this.lbl_inputCustomer.TabIndex = 29;
+            this.lbl_inputCustomer.Text = "Customer";
             // 
-            // button2
+            // btn_insertOrder
             // 
-            this.button2.Location = new System.Drawing.Point(742, 112);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 57);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_insertOrder.Location = new System.Drawing.Point(1104, 210);
+            this.btn_insertOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_insertOrder.Name = "btn_insertOrder";
+            this.btn_insertOrder.Size = new System.Drawing.Size(188, 88);
+            this.btn_insertOrder.TabIndex = 28;
+            this.btn_insertOrder.Text = "Insert Order";
+            this.btn_insertOrder.UseVisualStyleBackColor = true;
+            this.btn_insertOrder.Click += new System.EventHandler(this.btn_insertOrder_Click);
             // 
-            // dateTimePicker3
+            // dtp_inputRequiredDate
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(237, 112);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker3.TabIndex = 27;
+            this.dtp_inputRequiredDate.Location = new System.Drawing.Point(376, 239);
+            this.dtp_inputRequiredDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtp_inputRequiredDate.Name = "dtp_inputRequiredDate";
+            this.dtp_inputRequiredDate.Size = new System.Drawing.Size(298, 26);
+            this.dtp_inputRequiredDate.TabIndex = 27;
             // 
-            // comboBox4
+            // cbx_inputOrderStatus
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(686, 37);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(200, 21);
-            this.comboBox4.TabIndex = 26;
+            this.cbx_inputOrderStatus.FormattingEnabled = true;
+            this.cbx_inputOrderStatus.Location = new System.Drawing.Point(1032, 124);
+            this.cbx_inputOrderStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbx_inputOrderStatus.Name = "cbx_inputOrderStatus";
+            this.cbx_inputOrderStatus.Size = new System.Drawing.Size(298, 28);
+            this.cbx_inputOrderStatus.TabIndex = 26;
             // 
-            // dateTimePicker2
+            // dtp_inputShippedDate
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(468, 112);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 25;
+            this.dtp_inputShippedDate.Location = new System.Drawing.Point(723, 239);
+            this.dtp_inputShippedDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtp_inputShippedDate.Name = "dtp_inputShippedDate";
+            this.dtp_inputShippedDate.Size = new System.Drawing.Size(298, 26);
+            this.dtp_inputShippedDate.TabIndex = 25;
             // 
-            // dateTimePicker1
+            // dtp_inputOrderDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(13, 112);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 24;
+            this.dtp_inputOrderDate.Location = new System.Drawing.Point(33, 239);
+            this.dtp_inputOrderDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtp_inputOrderDate.Name = "dtp_inputOrderDate";
+            this.dtp_inputOrderDate.Size = new System.Drawing.Size(298, 26);
+            this.dtp_inputOrderDate.TabIndex = 24;
             // 
-            // comboBox3
+            // cbx_inputStaff
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(468, 37);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 21);
-            this.comboBox3.TabIndex = 23;
+            this.cbx_inputStaff.FormattingEnabled = true;
+            this.cbx_inputStaff.Location = new System.Drawing.Point(692, 124);
+            this.cbx_inputStaff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbx_inputStaff.Name = "cbx_inputStaff";
+            this.cbx_inputStaff.Size = new System.Drawing.Size(298, 28);
+            this.cbx_inputStaff.TabIndex = 23;
             // 
-            // comboBox2
+            // cbx_inputStore
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(237, 37);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 21);
-            this.comboBox2.TabIndex = 22;
+            this.cbx_inputStore.FormattingEnabled = true;
+            this.cbx_inputStore.Location = new System.Drawing.Point(362, 124);
+            this.cbx_inputStore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbx_inputStore.Name = "cbx_inputStore";
+            this.cbx_inputStore.Size = new System.Drawing.Size(298, 28);
+            this.cbx_inputStore.TabIndex = 22;
             // 
-            // comboBox1
+            // cbx_inputCustomer
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 37);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 21;
+            this.cbx_inputCustomer.FormattingEnabled = true;
+            this.cbx_inputCustomer.Location = new System.Drawing.Point(28, 124);
+            this.cbx_inputCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbx_inputCustomer.Name = "cbx_inputCustomer";
+            this.cbx_inputCustomer.Size = new System.Drawing.Size(298, 28);
+            this.cbx_inputCustomer.TabIndex = 21;
+            // 
+            // lbl_titleInsertOrderData
+            // 
+            this.lbl_titleInsertOrderData.AutoSize = true;
+            this.lbl_titleInsertOrderData.Location = new System.Drawing.Point(630, 28);
+            this.lbl_titleInsertOrderData.Name = "lbl_titleInsertOrderData";
+            this.lbl_titleInsertOrderData.Size = new System.Drawing.Size(133, 20);
+            this.lbl_titleInsertOrderData.TabIndex = 36;
+            this.lbl_titleInsertOrderData.Text = "Insert Order Data";
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 209);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(1358, 392);
+            this.Controls.Add(this.lbl_titleInsertOrderData);
+            this.Controls.Add(this.lbl_inputShippedDate);
+            this.Controls.Add(this.lbl_inputRequiredDate);
+            this.Controls.Add(this.lbl_inputOrderDate);
+            this.Controls.Add(this.lbl_inputOrderStatus);
+            this.Controls.Add(this.lbl_inputStaff);
+            this.Controls.Add(this.lbl_inputStore);
+            this.Controls.Add(this.lbl_inputCustomer);
+            this.Controls.Add(this.btn_insertOrder);
+            this.Controls.Add(this.dtp_inputRequiredDate);
+            this.Controls.Add(this.cbx_inputOrderStatus);
+            this.Controls.Add(this.dtp_inputShippedDate);
+            this.Controls.Add(this.dtp_inputOrderDate);
+            this.Controls.Add(this.cbx_inputStaff);
+            this.Controls.Add(this.cbx_inputStore);
+            this.Controls.Add(this.cbx_inputCustomer);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -200,20 +228,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lbl_inputShippedDate;
+        private System.Windows.Forms.Label lbl_inputRequiredDate;
+        private System.Windows.Forms.Label lbl_inputOrderDate;
+        private System.Windows.Forms.Label lbl_inputOrderStatus;
+        private System.Windows.Forms.Label lbl_inputStaff;
+        private System.Windows.Forms.Label lbl_inputStore;
+        private System.Windows.Forms.Label lbl_inputCustomer;
+        private System.Windows.Forms.Button btn_insertOrder;
+        private System.Windows.Forms.DateTimePicker dtp_inputRequiredDate;
+        private System.Windows.Forms.ComboBox cbx_inputOrderStatus;
+        private System.Windows.Forms.DateTimePicker dtp_inputShippedDate;
+        private System.Windows.Forms.DateTimePicker dtp_inputOrderDate;
+        private System.Windows.Forms.ComboBox cbx_inputStaff;
+        private System.Windows.Forms.ComboBox cbx_inputStore;
+        private System.Windows.Forms.ComboBox cbx_inputCustomer;
+        private System.Windows.Forms.Label lbl_titleInsertOrderData;
     }
 }
