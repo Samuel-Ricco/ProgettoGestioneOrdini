@@ -19,8 +19,13 @@ namespace ProgettoGruppo2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var db = new DataBase();
-            db.GetTables();
+
+        }
+
+        private void btn_goToInsertOrder_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
     }
 }

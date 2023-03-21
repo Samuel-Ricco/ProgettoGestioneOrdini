@@ -19,16 +19,20 @@ namespace ProgettoGruppo2
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            cbx_inputOrderStatus.Items.Add("Status 1");
+            cbx_inputOrderStatus.Items.Add("Status 2");
+            cbx_inputOrderStatus.Items.Add("Status 3");
+            cbx_inputOrderStatus.Items.Add("Status 4");
         }
 
         private void btn_insertOrder_Click(object sender, EventArgs e)
         {
-            if(!CheckCorrectOrderInput())
+            if(CheckCorrectOrderInput())
             {
-                
-                
-                Application.Run(new Form3());
+
+
+                Form3 frm = new Form3();
+                frm.ShowDialog();
             }
             else
             {

@@ -28,94 +28,107 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox_customers = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cbx_customers = new System.Windows.Forms.ComboBox();
+            this.dgw_orderTable = new System.Windows.Forms.DataGridView();
+            this.dgw_orderDetailsTable = new System.Windows.Forms.DataGridView();
+            this.btn_loadOrders = new System.Windows.Forms.Button();
+            this.lbl_customers = new System.Windows.Forms.Label();
             this.performanceCounter1 = new System.Diagnostics.PerformanceCounter();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.btn_loadOrderDetails = new System.Windows.Forms.Button();
+            this.btn_goToInsertOrder = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_orderTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_orderDetailsTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox_customers
+            // cbx_customers
             // 
-            this.comboBox_customers.FormattingEnabled = true;
-            this.comboBox_customers.Location = new System.Drawing.Point(80, 182);
-            this.comboBox_customers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox_customers.Name = "comboBox_customers";
-            this.comboBox_customers.Size = new System.Drawing.Size(378, 28);
-            this.comboBox_customers.TabIndex = 0;
+            this.cbx_customers.FormattingEnabled = true;
+            this.cbx_customers.Location = new System.Drawing.Point(80, 182);
+            this.cbx_customers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbx_customers.Name = "cbx_customers";
+            this.cbx_customers.Size = new System.Drawing.Size(378, 28);
+            this.cbx_customers.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgw_orderTable
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(528, 18);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(808, 274);
-            this.dataGridView1.TabIndex = 1;
+            this.dgw_orderTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgw_orderTable.Location = new System.Drawing.Point(528, 18);
+            this.dgw_orderTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgw_orderTable.Name = "dgw_orderTable";
+            this.dgw_orderTable.RowHeadersWidth = 62;
+            this.dgw_orderTable.Size = new System.Drawing.Size(808, 274);
+            this.dgw_orderTable.TabIndex = 1;
             // 
-            // dataGridView2
+            // dgw_orderDetailsTable
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(27, 451);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.Size = new System.Drawing.Size(1310, 148);
-            this.dataGridView2.TabIndex = 2;
+            this.dgw_orderDetailsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgw_orderDetailsTable.Location = new System.Drawing.Point(27, 451);
+            this.dgw_orderDetailsTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgw_orderDetailsTable.Name = "dgw_orderDetailsTable";
+            this.dgw_orderDetailsTable.RowHeadersWidth = 62;
+            this.dgw_orderDetailsTable.Size = new System.Drawing.Size(1310, 148);
+            this.dgw_orderDetailsTable.TabIndex = 2;
             // 
-            // button1
+            // btn_loadOrders
             // 
-            this.button1.Location = new System.Drawing.Point(170, 48);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 88);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_loadOrders.Location = new System.Drawing.Point(170, 48);
+            this.btn_loadOrders.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_loadOrders.Name = "btn_loadOrders";
+            this.btn_loadOrders.Size = new System.Drawing.Size(188, 88);
+            this.btn_loadOrders.TabIndex = 10;
+            this.btn_loadOrders.Text = "Load Orders";
+            this.btn_loadOrders.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lbl_customers
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(240, 157);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "label1";
+            this.lbl_customers.AutoSize = true;
+            this.lbl_customers.Location = new System.Drawing.Point(240, 157);
+            this.lbl_customers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_customers.Name = "lbl_customers";
+            this.lbl_customers.Size = new System.Drawing.Size(86, 20);
+            this.lbl_customers.TabIndex = 12;
+            this.lbl_customers.Text = "Customers";
             // 
-            // button2
+            // btn_loadOrderDetails
             // 
-            this.button2.Location = new System.Drawing.Point(1149, 302);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(188, 88);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_loadOrderDetails.Location = new System.Drawing.Point(1149, 302);
+            this.btn_loadOrderDetails.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_loadOrderDetails.Name = "btn_loadOrderDetails";
+            this.btn_loadOrderDetails.Size = new System.Drawing.Size(188, 88);
+            this.btn_loadOrderDetails.TabIndex = 13;
+            this.btn_loadOrderDetails.Text = "Load Order Details";
+            this.btn_loadOrderDetails.UseVisualStyleBackColor = true;
+            // 
+            // btn_goToInsertOrder
+            // 
+            this.btn_goToInsertOrder.Location = new System.Drawing.Point(361, 671);
+            this.btn_goToInsertOrder.Name = "btn_goToInsertOrder";
+            this.btn_goToInsertOrder.Size = new System.Drawing.Size(631, 91);
+            this.btn_goToInsertOrder.TabIndex = 14;
+            this.btn_goToInsertOrder.Text = "Go To Insert Order";
+            this.btn_goToInsertOrder.UseVisualStyleBackColor = true;
+            this.btn_goToInsertOrder.Click += new System.EventHandler(this.btn_goToInsertOrder_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1384, 703);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox_customers);
+            this.ClientSize = new System.Drawing.Size(1384, 822);
+            this.Controls.Add(this.btn_goToInsertOrder);
+            this.Controls.Add(this.btn_loadOrderDetails);
+            this.Controls.Add(this.lbl_customers);
+            this.Controls.Add(this.btn_loadOrders);
+            this.Controls.Add(this.dgw_orderDetailsTable);
+            this.Controls.Add(this.dgw_orderTable);
+            this.Controls.Add(this.cbx_customers);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_orderTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_orderDetailsTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,13 +136,14 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox_customers;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbx_customers;
+        private System.Windows.Forms.DataGridView dgw_orderTable;
+        private System.Windows.Forms.DataGridView dgw_orderDetailsTable;
+        private System.Windows.Forms.Button btn_loadOrders;
+        private System.Windows.Forms.Label lbl_customers;
         private System.Diagnostics.PerformanceCounter performanceCounter1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_loadOrderDetails;
+        private System.Windows.Forms.Button btn_goToInsertOrder;
     }
 }
 
