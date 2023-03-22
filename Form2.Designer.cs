@@ -79,7 +79,7 @@
             // lbl_inputOrderStatus
             // 
             this.lbl_inputOrderStatus.AutoSize = true;
-            this.lbl_inputOrderStatus.Location = new System.Drawing.Point(1131, 84);
+            this.lbl_inputOrderStatus.Location = new System.Drawing.Point(750, 84);
             this.lbl_inputOrderStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_inputOrderStatus.Name = "lbl_inputOrderStatus";
             this.lbl_inputOrderStatus.Size = new System.Drawing.Size(100, 20);
@@ -89,7 +89,7 @@
             // lbl_inputStaff
             // 
             this.lbl_inputStaff.AutoSize = true;
-            this.lbl_inputStaff.Location = new System.Drawing.Point(819, 84);
+            this.lbl_inputStaff.Location = new System.Drawing.Point(558, 84);
             this.lbl_inputStaff.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_inputStaff.Name = "lbl_inputStaff";
             this.lbl_inputStaff.Size = new System.Drawing.Size(44, 20);
@@ -99,7 +99,7 @@
             // lbl_inputStore
             // 
             this.lbl_inputStore.AutoSize = true;
-            this.lbl_inputStore.Location = new System.Drawing.Point(487, 84);
+            this.lbl_inputStore.Location = new System.Drawing.Point(343, 84);
             this.lbl_inputStore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_inputStore.Name = "lbl_inputStore";
             this.lbl_inputStore.Size = new System.Drawing.Size(48, 20);
@@ -109,7 +109,7 @@
             // lbl_inputCustomer
             // 
             this.lbl_inputCustomer.AutoSize = true;
-            this.lbl_inputCustomer.Location = new System.Drawing.Point(138, 84);
+            this.lbl_inputCustomer.Location = new System.Drawing.Point(102, 84);
             this.lbl_inputCustomer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_inputCustomer.Name = "lbl_inputCustomer";
             this.lbl_inputCustomer.Size = new System.Drawing.Size(78, 20);
@@ -118,10 +118,10 @@
             // 
             // btn_insertOrder
             // 
-            this.btn_insertOrder.Location = new System.Drawing.Point(1104, 210);
+            this.btn_insertOrder.Location = new System.Drawing.Point(946, 84);
             this.btn_insertOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_insertOrder.Name = "btn_insertOrder";
-            this.btn_insertOrder.Size = new System.Drawing.Size(188, 88);
+            this.btn_insertOrder.Size = new System.Drawing.Size(144, 88);
             this.btn_insertOrder.TabIndex = 28;
             this.btn_insertOrder.Text = "Insert Order";
             this.btn_insertOrder.UseVisualStyleBackColor = true;
@@ -138,10 +138,10 @@
             // cbx_inputOrderStatus
             // 
             this.cbx_inputOrderStatus.FormattingEnabled = true;
-            this.cbx_inputOrderStatus.Location = new System.Drawing.Point(1032, 124);
+            this.cbx_inputOrderStatus.Location = new System.Drawing.Point(710, 124);
             this.cbx_inputOrderStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbx_inputOrderStatus.Name = "cbx_inputOrderStatus";
-            this.cbx_inputOrderStatus.Size = new System.Drawing.Size(298, 28);
+            this.cbx_inputOrderStatus.Size = new System.Drawing.Size(168, 28);
             this.cbx_inputOrderStatus.TabIndex = 26;
             // 
             // dtp_inputShippedDate
@@ -163,19 +163,19 @@
             // cbx_inputStaff
             // 
             this.cbx_inputStaff.FormattingEnabled = true;
-            this.cbx_inputStaff.Location = new System.Drawing.Point(692, 124);
+            this.cbx_inputStaff.Location = new System.Drawing.Point(473, 124);
             this.cbx_inputStaff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbx_inputStaff.Name = "cbx_inputStaff";
-            this.cbx_inputStaff.Size = new System.Drawing.Size(298, 28);
+            this.cbx_inputStaff.Size = new System.Drawing.Size(201, 28);
             this.cbx_inputStaff.TabIndex = 23;
             // 
             // cbx_inputStore
             // 
             this.cbx_inputStore.FormattingEnabled = true;
-            this.cbx_inputStore.Location = new System.Drawing.Point(362, 124);
+            this.cbx_inputStore.Location = new System.Drawing.Point(267, 124);
             this.cbx_inputStore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbx_inputStore.Name = "cbx_inputStore";
-            this.cbx_inputStore.Size = new System.Drawing.Size(298, 28);
+            this.cbx_inputStore.Size = new System.Drawing.Size(183, 28);
             this.cbx_inputStore.TabIndex = 22;
             // 
             // cbx_inputCustomer
@@ -184,13 +184,13 @@
             this.cbx_inputCustomer.Location = new System.Drawing.Point(28, 124);
             this.cbx_inputCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbx_inputCustomer.Name = "cbx_inputCustomer";
-            this.cbx_inputCustomer.Size = new System.Drawing.Size(298, 28);
+            this.cbx_inputCustomer.Size = new System.Drawing.Size(210, 28);
             this.cbx_inputCustomer.TabIndex = 21;
             // 
             // lbl_titleInsertOrderData
             // 
             this.lbl_titleInsertOrderData.AutoSize = true;
-            this.lbl_titleInsertOrderData.Location = new System.Drawing.Point(630, 28);
+            this.lbl_titleInsertOrderData.Location = new System.Drawing.Point(525, 26);
             this.lbl_titleInsertOrderData.Name = "lbl_titleInsertOrderData";
             this.lbl_titleInsertOrderData.Size = new System.Drawing.Size(133, 20);
             this.lbl_titleInsertOrderData.TabIndex = 36;
@@ -200,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1358, 392);
+            this.ClientSize = new System.Drawing.Size(1173, 347);
             this.Controls.Add(this.lbl_titleInsertOrderData);
             this.Controls.Add(this.lbl_inputShippedDate);
             this.Controls.Add(this.lbl_inputRequiredDate);

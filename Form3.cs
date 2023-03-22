@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,15 +15,18 @@ namespace ProgettoGruppo2
     public partial class Form3 : Form
     {
         public int CountItem { get; set; }
+        public DataBase db;
 
         public Form3()
         {
             InitializeComponent();
+            db = new DataBase();
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // Metodo per inserire Nomi prodotti in cbx_inputProduct
+            cbx_inputProduct.DataSource = db.ctx.products.ToList();
+            cbx_inputProduct.DisplayMember = "product_name";
 
             cbx_inputDiscount.Items.Add("0.05");
             cbx_inputDiscount.Items.Add("0.07");
@@ -34,37 +38,22 @@ namespace ProgettoGruppo2
 
         private void btn_insertOrderItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (CheckCorrectOrderItemInput())
-                {
-                    CountItem++;
-                    // Metodo per inserire i dati di order item nel db
-                }
-            }
-            catch(Exception ex) 
-            {
-                MessageBox.Show(ex.Message);
-            }
+            CountItem++;
+            var oi = new order_items();
+            oi.order_id = db.ctx.orders.OrderByDescending(o => o.order_id).FirstOrDefault().order_id;
+            oi.item_id = CountItem;
+            oi.product_id = (int)cbx_inputProduct.SelectedValue;
+            oi.quantity = int.Parse(tbx_inputQuantity.Text);
+            oi.list_price = ((product)cbx_inputProduct.SelectedItem).list_price;
+            oi.discount = decimal.Parse(cbx_inputDiscount.Text);
 
-            
+            //db.ctx.orders.Add(o);
+            //db.ctx.SaveChanges();            
         }
 
-        private bool CheckCorrectOrderItemInput()
+        private void btn_backToMain_Click(object sender, EventArgs e)
         {
-            int n;
-            if (int.TryParse(tbx_inputQuantity.Text, out n))
-            {
-                MessageBox.Show("Devi inserire un numero intero");
-                return false;
-            }
-            else if (n <= 0 && n > 20)
-            {
-                MessageBox.Show("Devi inserire un numero compreso tra 1 e 20");
-                return false;
-            }
-
-            return true;
+            this.Close();
         }
     }
 }
