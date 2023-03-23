@@ -15,9 +15,6 @@ namespace ProgettoGruppo2
         public db_a967b2_dblogintestEntities ctx = new db_a967b2_dblogintestEntities();
 
 
-
-        public List<customer> GetCustomers() { return ctx.customers.ToList(); }
-
         public List<order> GetOrdersById(int id) { return ctx.orders.Where(x => x.customer_id == id).ToList(); }
 
         public DbRawSqlQuery<OrderDetail> GetOrderDetails(int id)
@@ -29,9 +26,7 @@ namespace ProgettoGruppo2
             $" where o.order_id = {id}");
 
             return result;
-
         }
-
 
         public DbRawSqlQuery<OrderItems> GetOrderItems(int id)
         {

@@ -33,12 +33,13 @@
             this.dgw_orderDetailsTable = new System.Windows.Forms.DataGridView();
             this.btn_loadOrders = new System.Windows.Forms.Button();
             this.lbl_customers = new System.Windows.Forms.Label();
-            this.btn_loadOrderDetails = new System.Windows.Forms.Button();
             this.btn_goToInsertOrder = new System.Windows.Forms.Button();
             this.tbx_city = new System.Windows.Forms.TextBox();
             this.tbx_fullStaffName = new System.Windows.Forms.TextBox();
             this.lbl_city = new System.Windows.Forms.Label();
             this.lbl_staff = new System.Windows.Forms.Label();
+            this.lbl_ordersTitle = new System.Windows.Forms.Label();
+            this.lbl_orderDetailsTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgw_orderTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgw_orderDetailsTable)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +56,7 @@
             // dgw_orderTable
             // 
             this.dgw_orderTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw_orderTable.Location = new System.Drawing.Point(528, 18);
+            this.dgw_orderTable.Location = new System.Drawing.Point(516, 54);
             this.dgw_orderTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgw_orderTable.Name = "dgw_orderTable";
             this.dgw_orderTable.RowHeadersWidth = 62;
@@ -66,7 +67,7 @@
             // dgw_orderDetailsTable
             // 
             this.dgw_orderDetailsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw_orderDetailsTable.Location = new System.Drawing.Point(528, 316);
+            this.dgw_orderDetailsTable.Location = new System.Drawing.Point(516, 325);
             this.dgw_orderDetailsTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgw_orderDetailsTable.Name = "dgw_orderDetailsTable";
             this.dgw_orderDetailsTable.RowHeadersWidth = 62;
@@ -94,16 +95,6 @@
             this.lbl_customers.TabIndex = 12;
             this.lbl_customers.Text = "Customers";
             // 
-            // btn_loadOrderDetails
-            // 
-            this.btn_loadOrderDetails.Location = new System.Drawing.Point(528, 234);
-            this.btn_loadOrderDetails.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_loadOrderDetails.Name = "btn_loadOrderDetails";
-            this.btn_loadOrderDetails.Size = new System.Drawing.Size(697, 49);
-            this.btn_loadOrderDetails.TabIndex = 13;
-            this.btn_loadOrderDetails.Text = "Load Order Details";
-            this.btn_loadOrderDetails.UseVisualStyleBackColor = true;
-            // 
             // btn_goToInsertOrder
             // 
             this.btn_goToInsertOrder.Location = new System.Drawing.Point(45, 39);
@@ -116,14 +107,14 @@
             // 
             // tbx_city
             // 
-            this.tbx_city.Location = new System.Drawing.Point(197, 316);
+            this.tbx_city.Location = new System.Drawing.Point(339, 340);
             this.tbx_city.Name = "tbx_city";
             this.tbx_city.Size = new System.Drawing.Size(135, 26);
             this.tbx_city.TabIndex = 15;
             // 
             // tbx_fullStaffName
             // 
-            this.tbx_fullStaffName.Location = new System.Drawing.Point(197, 366);
+            this.tbx_fullStaffName.Location = new System.Drawing.Point(339, 390);
             this.tbx_fullStaffName.Name = "tbx_fullStaffName";
             this.tbx_fullStaffName.Size = new System.Drawing.Size(135, 26);
             this.tbx_fullStaffName.TabIndex = 16;
@@ -131,7 +122,7 @@
             // lbl_city
             // 
             this.lbl_city.AutoSize = true;
-            this.lbl_city.Location = new System.Drawing.Point(77, 321);
+            this.lbl_city.Location = new System.Drawing.Point(278, 346);
             this.lbl_city.Name = "lbl_city";
             this.lbl_city.Size = new System.Drawing.Size(35, 20);
             this.lbl_city.TabIndex = 17;
@@ -140,23 +131,42 @@
             // lbl_staff
             // 
             this.lbl_staff.AutoSize = true;
-            this.lbl_staff.Location = new System.Drawing.Point(81, 371);
+            this.lbl_staff.Location = new System.Drawing.Point(223, 396);
             this.lbl_staff.Name = "lbl_staff";
             this.lbl_staff.Size = new System.Drawing.Size(90, 20);
             this.lbl_staff.TabIndex = 18;
             this.lbl_staff.Text = "Staff Name";
+            // 
+            // lbl_ordersTitle
+            // 
+            this.lbl_ordersTitle.AutoSize = true;
+            this.lbl_ordersTitle.Location = new System.Drawing.Point(836, 26);
+            this.lbl_ordersTitle.Name = "lbl_ordersTitle";
+            this.lbl_ordersTitle.Size = new System.Drawing.Size(57, 20);
+            this.lbl_ordersTitle.TabIndex = 19;
+            this.lbl_ordersTitle.Text = "Orders";
+            // 
+            // lbl_orderDetailsTitle
+            // 
+            this.lbl_orderDetailsTitle.AutoSize = true;
+            this.lbl_orderDetailsTitle.Location = new System.Drawing.Point(813, 297);
+            this.lbl_orderDetailsTitle.Name = "lbl_orderDetailsTitle";
+            this.lbl_orderDetailsTitle.Size = new System.Drawing.Size(102, 20);
+            this.lbl_orderDetailsTitle.TabIndex = 20;
+            this.lbl_orderDetailsTitle.Text = "Order Details";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1242, 472);
+            this.Controls.Add(this.lbl_orderDetailsTitle);
+            this.Controls.Add(this.lbl_ordersTitle);
             this.Controls.Add(this.lbl_staff);
             this.Controls.Add(this.lbl_city);
             this.Controls.Add(this.tbx_fullStaffName);
             this.Controls.Add(this.tbx_city);
             this.Controls.Add(this.btn_goToInsertOrder);
-            this.Controls.Add(this.btn_loadOrderDetails);
             this.Controls.Add(this.lbl_customers);
             this.Controls.Add(this.btn_loadOrders);
             this.Controls.Add(this.dgw_orderDetailsTable);
@@ -180,12 +190,13 @@
         private System.Windows.Forms.DataGridView dgw_orderDetailsTable;
         private System.Windows.Forms.Button btn_loadOrders;
         private System.Windows.Forms.Label lbl_customers;
-        private System.Windows.Forms.Button btn_loadOrderDetails;
         private System.Windows.Forms.Button btn_goToInsertOrder;
         private System.Windows.Forms.TextBox tbx_city;
         private System.Windows.Forms.TextBox tbx_fullStaffName;
         private System.Windows.Forms.Label lbl_city;
         private System.Windows.Forms.Label lbl_staff;
+        private System.Windows.Forms.Label lbl_ordersTitle;
+        private System.Windows.Forms.Label lbl_orderDetailsTitle;
     }
 }
 
