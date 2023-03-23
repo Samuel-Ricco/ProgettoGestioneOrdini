@@ -61,7 +61,7 @@
             this.dgw_orderTable.RowHeadersWidth = 62;
             this.dgw_orderTable.Size = new System.Drawing.Size(697, 192);
             this.dgw_orderTable.TabIndex = 1;
-            this.dgw_orderTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_orderTable_CellContentClick);
+            this.dgw_orderTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_orderTable_CellContentClick);
             // 
             // dgw_orderDetailsTable
             // 
